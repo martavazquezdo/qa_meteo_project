@@ -112,3 +112,10 @@ python qa_pipeline.py
 
 ```bash
 bash run_pipeline.sh
+```
+## Continuous Integration
+
+Basic automated testing has been implemented using GitHub Actions.  
+Test cases with controlled data are executed automatically on each push, ensuring that validation checks behave as expected and that changes do not introduce regressions.
+
+This approach reflects a simplified continuous integration workflow applied to a data validation context.
