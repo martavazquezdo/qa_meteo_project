@@ -3,8 +3,18 @@ name: Run QA tests
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'src/**'
+      - 'tests/**'
+      - 'config/**'
+      - 'requirements.txt'
   pull_request:
     branches: [ main ]
+    paths:
+      - 'src/**'
+      - 'tests/**'
+      - 'config/**'
+      - 'requirements.txt'
 
 jobs:
   test:
