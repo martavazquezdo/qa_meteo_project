@@ -21,7 +21,7 @@ from config.settings import (
 from src.qa.completeness import run_completeness_checks
 from src.qa.temporal import run_temporal_checks
 from src.qa.physical import run_physical_checks
-from src.reporting import (
+from src.reporting.reporting import (
     enrich_issues_with_reporting_fields,
     build_execution_summary,
     build_station_overview,
