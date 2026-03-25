@@ -1,0 +1,3 @@
+﻿station_name;total_issues;high_severity_count;medium_severity_count;low_severity_count;status
+StationA;10;4;5;1;CRITICAL
+StationB;14;2;11;1;CRITICAL

@@ -1,0 +1,3 @@
+﻿station_name;file_name;abrupt_change_count;constant_value_persistence_count;isolated_spike_count;total_temporal_issues;status;analysis_date;pipeline_issue_count;total_station_issues
+StationA;StationA_08_01_2026.csv;2;1;1;4;WARNING;2026-01-08;1;5
+StationB;StationB_08_01_2026.csv;2;4;1;7;WARNING;2026-01-08;1;8
