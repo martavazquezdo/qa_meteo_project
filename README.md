@@ -43,7 +43,7 @@ Each issue is enriched with:
 
 This allows prioritization and facilitates communication of QA results.
 
-## ⚙️ Technical requirements
+## Technical requirements
 
 The pipeline has been designed to run as a lightweight and modular QA system with minimal dependencies.
 
