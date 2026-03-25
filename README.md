@@ -43,6 +43,45 @@ Each issue is enriched with:
 
 This allows prioritization and facilitates communication of QA results.
 
+## ⚙️ Technical requirements
+
+The pipeline has been designed to run as a lightweight and modular QA system with minimal dependencies.
+
+### Software requirements
+- Python 3.9+
+- pandas
+- numpy
+
+### Data requirements
+- Input data must be provided as CSV files with a timestamp index
+- Files must follow the naming convention:
+  
+```
+StationName_dd_mm_yyyy.csv
+```
+
+- Data must be preprocessed into a structured format (one column per variable)
+
+### Configuration
+- Validation thresholds are defined in a central configuration file (`settings.py`)
+- This allows easy adjustment without modifying the core logic
+
+### Execution
+- The pipeline is designed to run:
+- daily (operational mode)
+- manually for testing (custom reference date)
+
+### Output
+- The system generates:
+- structured issue logs
+- summaries per validation dimension
+- execution-level reports for communication
+
+### Design considerations
+- Modular architecture (completeness, temporal, physical)
+- Clear separation between validation and reporting
+- Designed for scalability across multiple stations
+
 ## Data structure
 
 The project follows a structured data workflow:
