@@ -43,6 +43,21 @@ Each issue is enriched with:
 
 This allows prioritization and facilitates communication of QA results.
 
+## Data structure
+
+The project follows a structured data workflow:
+
+data/
+├── raw/ # Raw input data (not tracked)
+├── processed/ # Preprocessed station data (not tracked)
+├── qa_reports/ # Generated QA outputs (not tracked)
+└── sample/ # Example dataset for demonstration
+    ├── input/
+    └── output/
+
+- The `raw`, `processed` and `qa_reports` folders are excluded from version control using `.gitignore`.
+- The `sample` folder contains a small example dataset and corresponding outputs to illustrate the pipeline behavior.
+
 ## Usage
 
 Run the pipeline:
