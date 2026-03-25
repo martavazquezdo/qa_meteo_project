@@ -51,6 +51,7 @@ The pipeline has been designed to run as a lightweight and modular QA system wit
 - Python 3.9+
 - pandas
 - numpy
+- pytest
 
 ### Data requirements
 - Input data must be provided as CSV files with a timestamp index
