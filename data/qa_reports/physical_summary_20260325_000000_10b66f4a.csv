@@ -1,0 +1,3 @@
+﻿station_name;file_name;range_low_count;range_high_count;rain_low_humidity_count;total_physical_issues;status;analysis_date;pipeline_issue_count;total_station_issues
+PonteBoga;PonteBoga_08_01_2026.csv;0;0;0;0;WARNING;2026-01-08;1;1
+SanXoandeRio;SanXoandeRio_08_01_2026.csv;0;0;1;1;WARNING;2026-01-08;1;2

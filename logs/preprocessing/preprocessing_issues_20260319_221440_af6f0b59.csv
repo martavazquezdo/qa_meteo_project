@@ -1,0 +1,3 @@
+﻿execution_id;file_name;station_name;issue_type;issue_detail
+af6f0b59;datos_PonteBoga.csv;PonteBoga;preprocessing_error;Missing expected day(s): [datetime.date(2026, 3, 17), datetime.date(2026, 3, 18), datetime.date(2026, 3, 19)]
+af6f0b59;datos_SanXoan.csv;SanXoandeRio;preprocessing_error;Missing expected day(s): [datetime.date(2026, 3, 17), datetime.date(2026, 3, 18), datetime.date(2026, 3, 19)]

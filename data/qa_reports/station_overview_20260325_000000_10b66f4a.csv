@@ -1,0 +1,3 @@
+﻿station_name;total_issues;high_severity_count;medium_severity_count;low_severity_count;status
+PonteBoga;10;4;5;1;CRITICAL
+SanXoandeRio;14;2;11;1;CRITICAL

@@ -1,0 +1,16 @@
+2026-03-25 11:33:47,684 | INFO | [10b66f4a] Starting QA pipeline
+2026-03-25 11:33:47,684 | INFO | [10b66f4a] Log file: C:\Users\marth\OneDrive\Documentos\Validacion\logs\qa\qa_pipeline_20260325_000000_10b66f4a.log
+2026-03-25 11:33:47,684 | INFO | [10b66f4a] Processed directory: C:\Users\marth\OneDrive\Documentos\Validacion\data\processed
+2026-03-25 11:33:47,684 | INFO | [10b66f4a] Reports directory: C:\Users\marth\OneDrive\Documentos\Validacion\data\qa_reports
+2026-03-25 11:33:47,684 | INFO | [10b66f4a] Reference date: 2026-03-25 00:00:00
+2026-03-25 11:33:47,684 | INFO | [10b66f4a] Validate freshness: True
+2026-03-25 11:33:47,719 | INFO | station=PonteBoga | file=PonteBoga_08_01_2026.csv | analysis_date=2026-01-08 | rows=173 | completeness_issues=5 | temporal_issues=4 | physical_issues=0 | pipeline_issues=1
+2026-03-25 11:33:47,758 | INFO | station=SanXoandeRio | file=SanXoandeRio_08_01_2026.csv | analysis_date=2026-01-08 | rows=325 | completeness_issues=5 | temporal_issues=7 | physical_issues=1 | pipeline_issues=1
+2026-03-25 11:33:47,767 | INFO | [10b66f4a] Issues report saved: C:\Users\marth\OneDrive\Documentos\Validacion\data\qa_reports\issues_20260325_000000_10b66f4a.csv
+2026-03-25 11:33:47,767 | INFO | [10b66f4a] Completeness summary report saved: C:\Users\marth\OneDrive\Documentos\Validacion\data\qa_reports\completeness_summary_20260325_000000_10b66f4a.csv
+2026-03-25 11:33:47,767 | INFO | [10b66f4a] Temporal summary report saved: C:\Users\marth\OneDrive\Documentos\Validacion\data\qa_reports\temporal_summary_20260325_000000_10b66f4a.csv
+2026-03-25 11:33:47,767 | INFO | [10b66f4a] Physical summary report saved: C:\Users\marth\OneDrive\Documentos\Validacion\data\qa_reports\physical_summary_20260325_000000_10b66f4a.csv
+2026-03-25 11:33:47,767 | INFO | [10b66f4a] Execution summary report saved: C:\Users\marth\OneDrive\Documentos\Validacion\data\qa_reports\execution_summary_20260325_000000_10b66f4a.csv
+2026-03-25 11:33:47,767 | INFO | [10b66f4a] Station overview report saved: C:\Users\marth\OneDrive\Documentos\Validacion\data\qa_reports\station_overview_20260325_000000_10b66f4a.csv
+2026-03-25 11:33:47,767 | INFO | [10b66f4a] Execution text report saved: C:\Users\marth\OneDrive\Documentos\Validacion\data\qa_reports\execution_report_20260325_000000_10b66f4a.txt
+2026-03-25 11:33:47,767 | INFO | [10b66f4a] QA pipeline finished | stations=2 | issues=24 | overall_status=CRITICAL

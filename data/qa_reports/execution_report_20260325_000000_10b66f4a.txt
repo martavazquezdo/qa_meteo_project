@@ -1,0 +1,15 @@
+QA EXECUTION REPORT
+Execution ID: 10b66f4a
+Reference date: 2026-03-25
+
+GLOBAL SUMMARY
+- Stations processed: 2
+- Total issues: 24
+- High severity: 6
+- Medium severity: 16
+- Low severity: 2
+- Overall status: CRITICAL
+
+STATION OVERVIEW
+- PonteBoga: status=CRITICAL, total=10, HIGH=4, MEDIUM=5, LOW=1
+- SanXoandeRio: status=CRITICAL, total=14, HIGH=2, MEDIUM=11, LOW=1
