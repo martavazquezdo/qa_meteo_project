@@ -105,3 +105,9 @@ Run the pipeline:
 
 ```bash
 python qa_pipeline.py
+```
+
+### Data structure
+
+```bash
+bash run_pipeline.sh
