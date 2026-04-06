@@ -1,121 +1,107 @@
 # Meteorological Data QA Pipeline
 
-Small QA pipeline for validating meteorological station data before using it as input for environmental or fire behavior models.
+A modular Python pipeline for validating meteorological station data, designed to ensure the quality of inputs used in environmental and fire risk modeling.
+
+---
 
 ## Objective
 
-Ensure data quality through structured validation checks and transform raw validation outputs into actionable insights for decision-making and communication.
+Detect inconsistencies in meteorological data and transform them into structured outputs that support:
 
-## Pipeline Overview
+* issue prioritization
+* decision-making
+* clear communication of results
 
-The pipeline processes station data and applies validation checks across three dimensions:
+---
+
+## Validation Approach
+
+The pipeline applies validation checks across three key dimensions:
 
 ### 1. Completeness
-- Missing values
-- Duplicated timestamps
-- Temporal gaps
-- Expected time window coverage
+
+* missing values
+* duplicated timestamps
+* temporal gaps
+* expected time coverage
 
 ### 2. Temporal Consistency
-- Abrupt changes
-- Constant value persistence (sensor blocking)
-- Isolated spikes
+
+* abrupt changes
+* constant value persistence (sensor blocking)
+* isolated spikes
 
 ### 3. Physical Consistency
-- Physical range validation (e.g. RH > 100%, negative precipitation)
-- Cross-variable validation (e.g. precipitation with low humidity)
+
+* physical range validation (e.g. RH > 100%, negative precipitation)
+* cross-variable consistency (e.g. precipitation with low humidity)
+
+---
 
 ## Outputs
 
-The pipeline generates:
+The system generates:
 
-- `issues.csv` → detailed list of detected issues
-- `*_summary.csv` → summaries by validation dimension
-- `execution_summary.csv` → global QA status
-- `station_overview.csv` → station-level prioritization
-- `execution_report.txt` → human-readable report
+* `issues.csv` → detected issues
+* `*_summary.csv` → summaries by validation dimension
+* `execution_summary.csv` → overall QA status
+* `station_overview.csv` → station-level prioritization
+* `execution_report.txt` → human-readable report
 
-## Issue Classification
+Each issue includes:
 
-Each issue is enriched with:
-- Severity (`HIGH`, `MEDIUM`, `LOW`)
-- Recommended action (`review_required`, `monitor`)
+* severity level (HIGH, MEDIUM, LOW)
+* recommended action
 
-This allows prioritization and facilitates communication of QA results.
+---
 
-## Technical requirements
+## System Design
 
-The pipeline has been designed to run as a lightweight and modular QA system with minimal dependencies.
+* modular architecture (completeness, temporal, physical)
+* clear separation between validation and reporting
+* configurable thresholds (`settings.py`)
+* scalable across multiple stations
 
-### Software requirements
-- Python 3.9+
-- pandas
-- numpy
-- pytest
+---
 
-### Data requirements
-- Input data must be provided as CSV files with a timestamp index
-- Files must follow the naming convention:
-  
-```
-StationName_dd_mm_yyyy.csv
-```
+## Data Structure
 
-- Data must be preprocessed into a structured format (one column per variable)
-
-### Configuration
-- Validation thresholds are defined in a central configuration file (`settings.py`)
-- This allows easy adjustment without modifying the core logic
-
-### Execution
-- The pipeline is designed to run:
-- daily (operational mode)
-- manually for testing (custom reference date)
-
-### Output
-- The system generates:
-- structured issue logs
-- summaries per validation dimension
-- execution-level reports for communication
-
-### Design considerations
-- Modular architecture (completeness, temporal, physical)
-- Clear separation between validation and reporting
-- Designed for scalability across multiple stations
-
-## Data structure
-
-The project follows a structured data workflow:
-
-```
+```text
 data/
-├── raw/              # Raw input data (not tracked)
-├── processed/        # Preprocessed station data (not tracked)
-├── qa_reports/       # Generated QA outputs (not tracked)
-└── sample/           # Example dataset for demonstration
-    ├── input/
-    └── output/
+├── raw/            # raw input data (not tracked)
+├── processed/      # preprocessed data (not tracked)
+├── qa_reports/     # generated outputs (not tracked)
+└── sample/         # example dataset
 ```
 
-- The `raw`, `processed` and `qa_reports` folders are excluded from version control using `.gitignore`.
-- The `sample` folder contains a small example dataset and corresponding outputs to illustrate the pipeline behavior.
+---
 
-## Usage
-
-Run the pipeline:
+## Execution
 
 ```bash
 python qa_pipeline.py
 ```
 
-### Execution (Linux)
+Linux:
 
 ```bash
 bash run_pipeline.sh
 ```
-## Continuous Integration
 
-Basic automated testing has been implemented using GitHub Actions.  
-Test cases with controlled data are executed automatically on each push, ensuring that validation checks behave as expected and that changes do not introduce regressions.
+---
 
-This approach reflects a simplified continuous integration workflow applied to a data validation context.
+## Testing & CI
+
+The project includes:
+
+* unit tests with controlled datasets
+* automated execution via GitHub Actions
+
+This ensures validation logic behaves as expected and prevents regressions.
+
+---
+
+## Context
+
+This pipeline reflects a practical QA approach for environmental data, combining structured validation checks with outputs designed for operational use.
+
