@@ -1,4 +1,4 @@
-# Meteorological Data QA Pipeline
+# Meteorological Data Validation Pipeline
 
 A modular Python pipeline for validating meteorological station data, designed to ensure the quality of inputs used in environmental and fire risk modeling.
 
