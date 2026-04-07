@@ -71,7 +71,7 @@ data/
 ├── raw/            # raw input data (not tracked)
 ├── processed/      # preprocessed data (not tracked)
 ├── qa_reports/     # generated outputs (not tracked)
-└── sample/         # example dataset
+└── demo/         # example dataset
 ```
 
 ---
