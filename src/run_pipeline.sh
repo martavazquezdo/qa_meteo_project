@@ -1,3 +1,3 @@
 #!/bin/bash
-echo "Running QA pipeline..."
-python src/qa/qa_pipeline.py
+echo "Running Validation pipeline..."
+python src/validation/validation_pipeline.py
