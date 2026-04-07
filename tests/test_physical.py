@@ -1,6 +1,6 @@
 import pandas as pd
-from src.qa.completeness import check_temporal_gaps
-from src.qa.physical import check_rain_low_humidity
+from src.validation.completeness import check_temporal_gaps
+from src.validation.physical import check_rain_low_humidity
 
 
 def test_temporal_gap():

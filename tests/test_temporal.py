@@ -1,5 +1,5 @@
 import pandas as pd
-from src.qa.physical import check_rain_low_humidity
+from src.validation.physical import check_rain_low_humidity
 
 
 def test_rain_low_humidity():
